@@ -1,0 +1,122 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(41deg, rgb(0, 0, 0) 9%, rgb(0, 0, 0) 33%, rgb(0, 0, 0) 52%, rgb(0, 0, 0) 77%, rgb(0, 0, 0) 100%);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+.form-container {
+    width: 800px;
+    height: 800px;
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h1 {
+    color: #db0075;
+    margin-bottom: 20px;
+}
+
+.form-container form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.form-container input {
+    background-color: transparent;
+    width: 600px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: none !important; 
+    border-bottom: 2px solid #808080 !important; 
+    outline: none; 
+}
+
+.form-container input::placeholder {
+    font-size: 24px;
+}
+
+.form-container input:focus {
+    font-size: 24px;
+}
+
+.form-container button {
+    padding: 10px 20px;
+    font-size: 24px;
+    background-color: #db0075;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%;
+    margin-top: 20px;
+    transition: all .3s ease;
+}
+
+.form-container button:hover {
+    background-color: #c20063;
+}
+
+@media (min-width:522px) and (max-width: 992px) {
+    .form-container {
+        width: 500px;
+        height: 500px;
+    }
+
+    .form-container input {
+        width: 300px;
+    }
+
+    .form-container h1 {
+        margin-bottom: 0px;
+    }
+    
+    .form-container form {
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 522px) {
+    .form-container {
+        width: 400px;
+        height: 450px;
+    }
+
+    .form-container input {
+        width: 300px;
+    }  
+
+    .form-container button {
+        margin-top: 0px;
+    }
+
+    .form-container {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+}
