@@ -116,4 +116,9 @@ body, html {
     justify-content: center !important;
     align-items: center !important;
   }
+}
+@media (max-width: 521px) {
+  .form-container {
+    height: 550px !important;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -120,3 +120,9 @@ body, html {
         align-items: center !important;
     }
 }
+
+@media (max-width: 521px) {
+    .form-container {
+        height: 550px !important;
+    }
+}
